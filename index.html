@@ -5,19 +5,20 @@
     New Perspectives on HTML5 and CSS3, 7th Edition
     Tutorial 10
     Case Problem 3
-    
+
     Donations to Appalachian House
-    Author: 
-    Date:   
+    Author: Dajah Medina
+    Date:   3.1.19
 
     Filename: ah_report.html
    -->
-   
+
    <title>Appalachian House Donations</title>
    <meta charset="utf-8" />
    <link href="ah_base.css" rel="stylesheet"  />
    <link href="ah_layout.css" rel="stylesheet"  />
-
+   <script src="ah_donors.js" defer></script>
+   <script src="ah_report.js" defer></script>
 </head>
 
 <body>
@@ -32,10 +33,10 @@
             <li><a href="#">Support</a></li>
             <li><a href="#">Members</a></li>
          </ul>
-      </nav>   
-      <img src="ah_logo.png" alt="Appalachian House" id="logoImg" />   
+      </nav>
+      <img src="ah_logo.png" alt="Appalachian House" id="logoImg" />
    </header>
-   
+
    <nav class="vertical">
       <ul>
          <li><a href="#">Newsletter</a></li>
@@ -51,12 +52,13 @@
          <li><a href="#">Donors</a></li>
        </ul>
     </nav>
-   
-   <section>
-      <h1>Donor Report</h1>   
 
+   <section>
+      <h1>Donor Report</h1>
+      <div id="donationSummary"></div>
+      <div id="donationTotal"></div>
    </section>
-   
+
    <footer>
       <p>Appalachian House &copy; 2018 All Rights Reserved</p>
    </footer>
